@@ -124,3 +124,6 @@ students.forEach(e => {
 })
 
 
+// Output:// Anna 18 - Grade B - Math, Science
+// Mark 20 - Grade A - English
+// Lara 19 - Grade C - Math, History    
