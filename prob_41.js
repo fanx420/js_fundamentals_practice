@@ -4,6 +4,8 @@
 // Write a function findLongestWord(sentence) that takes a string and returns the longest word in it.
 // If there are multiple words with the same length, return the first one.
 
+//Using reduce:
+
 function findLongestWord(sentence){
     if (!sentence) return "";
     let words = sentence.toLowerCase().split(" "); 
@@ -18,3 +20,17 @@ console.log(findLongestWord("I love JavaScript programming"));
 
 console.log(findLongestWord(""));
 // ""
+
+//using loops
+function findLongestWord(sentence){
+    if (!sentence) return "";
+    let words = sentence.toLowerCase().split(" "); 
+    let longest = "";
+
+    for (let word of words){
+        if (word.length > longest.length){
+            longest = word;
+        }
+    }
+    return longest;
+}
